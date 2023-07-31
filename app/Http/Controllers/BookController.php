@@ -18,7 +18,7 @@ class BookController extends Controller
     {
         $book = new Books;
         $book->name = $request->name;
-        $book->authoer = $request->author;
+        $book->author = $request->author;
         $book->publish_date = $request->publish_date;
         $book->save();
         return response()->json([
